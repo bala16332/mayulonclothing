@@ -28,9 +28,47 @@
     
     <style>
 a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
-#main-content.body-container-wrapper {
-    margin-top: -35px !important;
+.page_header_title {
+  padding: 20px 0 !important; /* reduce padding top and bottom */
+  margin: 0 !important;
+}
+
+.page_header_bg {
+  margin: 0 !important;
+  padding: 0 !important;
+  height:  0 !important; /* If it's decorative and empty */
+}
+
+.content-box {
+  margin: 0 !important;
+  padding: 10px 0 !important;
+}
+
+/*  */
+
+.bread-crumb {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.bread-crumb li {
+  display: inline-block !important;
+  margin-right: 5px !important;
+}
+
+
+/* Medium size only on mobile (max width 768px) */
+@media (max-width: 768px) {
+  .map-container {
+    max-width: 100% !important ;  /* restrict width */
+    height: 350px !important;
+    margin: 8 auto !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
   }
+}
+
 </style>
 
 <link rel="stylesheet" href="../assets/css/themerow.min.css">
@@ -595,10 +633,10 @@ a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-b
 </div><!--end row-->
 </div><!--end row-wrapper -->
 
-<div class="row-fluid-wrapper row-depth-1 row-number-2 dnd-section">
+<div class="row-fluid-wrapper row-depth-1 row-number-2 dnd-section ">
 <div class="row-fluid ">
 <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
-<div id="hs_cos_wrapper_dnd_area-module-2" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_dnd_area-module-2_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250644.7683472287!2d76.8024142910673!3d11.014261493978644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1739198889416!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></span></div>
+<div id="hs_cos_wrapper_dnd_area-module-2" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_dnd_area-module-2_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250644.7683472287!2d76.8024142910673!3d11.014261493978644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1739198889416!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-container"></iframe></span></div>
 
 </div><!--end widget-span -->
 </div><!--end row-->
@@ -1264,7 +1302,7 @@ Weekend Closed
       
       
       
-      <script type="text/javascript" id="hs-script-loader" async defer src="hs/scriptloader/20012418.js"></script>
+      <script type="text/javascript" id="hs-script-loader" async defer src="../hs/scriptloader/20012418.js"></script>
       <!-- End of HubSpot Analytics Code -->
       
       
